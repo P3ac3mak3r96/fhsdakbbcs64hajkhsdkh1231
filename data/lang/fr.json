@@ -1,0 +1,78 @@
+{
+    "title": "Contrôle de la Matrice LED ESP32",
+    "languageLabel": "Langue :",
+    
+    "clientControlTitle": "Contrôle des Clients",
+    "selectAllBtn": "Tout sélectionner",
+    "deselectAllBtn": "Tout désélectionner",
+    "noClientSelected": "Veuillez sélectionner au moins un client",
+    
+    "trainingTitle": "Entraînement",
+    "trainingModeLabel": "Mode d'entraînement :",
+    "difficultyLabel": "Niveau de difficulté :",
+    "durationLabel": "Durée (secondes) :",
+    "targetCountLabel": "Nombre de cibles :",
+    "soundEnabledLabel": "Son activé",
+    "stressorsEnabledLabel": "Facteurs de stress",
+    "startTrainingBtn": "Démarrer l'entraînement",
+    "stopTrainingBtn": "Arrêter l'entraînement",
+    
+    "difficulty": {
+        "easy": "Facile",
+        "medium": "Moyen",
+        "hard": "Difficile"
+    },
+    
+    "trainingModes": {
+        "basicTraining": "Entraînement de base",
+        "reactionTraining": "Entraînement aux réflexes",
+        "colorCoded": "Entraînement par couleurs",
+        "movingTarget": "Cibles mobiles",
+        "stressTraining": "Entraînement sous stress",
+        "timedTraining": "Entraînement chronométré",
+        "endurance": "Entraînement d'endurance",
+        "teamTraining": "Entraînement d'équipe",
+        "competition": "Compétition",
+        "skillFocus": "Focus sur les compétences",
+        "adrenaline": "Entraînement adrénaline",
+        "nightVision": "Vision nocturne",
+        "distance": "Entraînement à distance",
+        "multiTarget": "Cibles multiples",
+        "hostageRescue": "Sauvetage d'otages"
+    },
+    
+    "ledControlTitle": "Contrôle LED",
+    "colorPickerLabel": "Couleur :",
+    "brightnessLabel": "Luminosité :",
+    
+    "effects": {
+        "rainbow": "Arc-en-ciel",
+        "fade": "Fondu",
+        "sparkle": "Étincelles",
+        "wave": "Vague",
+        "fire": "Feu"
+    },
+    
+    "trainingStatusTitle": "État de l'entraînement",
+    "hits": "Touches",
+    "misses": "Ratés",
+    "score": "Score",
+    "time": "Temps",
+    "accuracy": "Précision",
+    
+    "connectionStatus": {
+        "connected": "Connecté",
+        "disconnected": "Déconnecté",
+        "reconnecting": "Reconnexion en cours..."
+    },
+    
+    "messages": {
+        "trainingStarted": "Entraînement démarré",
+        "trainingStopped": "Entraînement arrêté",
+        "trainingCompleted": "Entraînement terminé",
+        "connectionLost": "Connexion perdue",
+        "connectionError": "Erreur de connexion",
+        "commandSent": "Commande envoyée",
+        "invalidConfig": "Configuration invalide"
+    }
+}

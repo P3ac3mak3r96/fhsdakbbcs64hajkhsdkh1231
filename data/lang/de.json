@@ -1,0 +1,78 @@
+{
+    "title": "ESP32 LED Matrix Steuerung",
+    "languageLabel": "Sprache:",
+    
+    "clientControlTitle": "Client-Steuerung",
+    "selectAllBtn": "Alle auswählen",
+    "deselectAllBtn": "Auswahl aufheben",
+    "noClientSelected": "Bitte wählen Sie mindestens einen Client aus",
+    
+    "trainingTitle": "Training",
+    "trainingModeLabel": "Trainingsmodus:",
+    "difficultyLabel": "Schwierigkeitsgrad:",
+    "durationLabel": "Dauer (Sekunden):",
+    "targetCountLabel": "Anzahl Ziele:",
+    "soundEnabledLabel": "Ton aktiviert",
+    "stressorsEnabledLabel": "Stressfaktoren",
+    "startTrainingBtn": "Training starten",
+    "stopTrainingBtn": "Training beenden",
+    
+    "difficulty": {
+        "easy": "Einfach",
+        "medium": "Mittel",
+        "hard": "Schwer"
+    },
+    
+    "trainingModes": {
+        "basicTraining": "Basis-Training",
+        "reactionTraining": "Reaktions-Training",
+        "colorCoded": "Farb-kodiertes Training",
+        "movingTarget": "Bewegliche Ziele",
+        "stressTraining": "Stress-Training",
+        "timedTraining": "Zeit-Training",
+        "endurance": "Ausdauer-Training",
+        "teamTraining": "Team-Training",
+        "competition": "Wettkampf",
+        "skillFocus": "Fokus-Training",
+        "adrenaline": "Adrenalin-Training",
+        "nightVision": "Nachtsicht-Training",
+        "distance": "Distanz-Training",
+        "multiTarget": "Multi-Ziel-Training",
+        "hostageRescue": "Geiselrettungs-Training"
+    },
+    
+    "ledControlTitle": "LED-Steuerung",
+    "colorPickerLabel": "Farbe:",
+    "brightnessLabel": "Helligkeit:",
+    
+    "effects": {
+        "rainbow": "Regenbogen",
+        "fade": "Überblenden",
+        "sparkle": "Funkeln",
+        "wave": "Welle",
+        "fire": "Feuer"
+    },
+    
+    "trainingStatusTitle": "Training Status",
+    "hits": "Treffer",
+    "misses": "Fehler",
+    "score": "Punkte",
+    "time": "Zeit",
+    "accuracy": "Genauigkeit",
+    
+    "connectionStatus": {
+        "connected": "Verbunden",
+        "disconnected": "Nicht verbunden",
+        "reconnecting": "Verbindung wird wiederhergestellt..."
+    },
+    
+    "messages": {
+        "trainingStarted": "Training gestartet",
+        "trainingStopped": "Training beendet",
+        "trainingCompleted": "Training abgeschlossen",
+        "connectionLost": "Verbindung verloren",
+        "connectionError": "Verbindungsfehler",
+        "commandSent": "Befehl gesendet",
+        "invalidConfig": "Ungültige Konfiguration"
+    }
+}

@@ -1,0 +1,78 @@
+{
+    "title": "ESP32 LED Matrix Control",
+    "languageLabel": "Language:",
+    
+    "clientControlTitle": "Client Control",
+    "selectAllBtn": "Select All",
+    "deselectAllBtn": "Deselect All",
+    "noClientSelected": "Please select at least one client",
+    
+    "trainingTitle": "Training",
+    "trainingModeLabel": "Training Mode:",
+    "difficultyLabel": "Difficulty Level:",
+    "durationLabel": "Duration (seconds):",
+    "targetCountLabel": "Target Count:",
+    "soundEnabledLabel": "Sound Enabled",
+    "stressorsEnabledLabel": "Stressors",
+    "startTrainingBtn": "Start Training",
+    "stopTrainingBtn": "Stop Training",
+    
+    "difficulty": {
+        "easy": "Easy",
+        "medium": "Medium",
+        "hard": "Hard"
+    },
+    
+    "trainingModes": {
+        "basicTraining": "Basic Training",
+        "reactionTraining": "Reaction Training",
+        "colorCoded": "Color-Coded Training",
+        "movingTarget": "Moving Targets",
+        "stressTraining": "Stress Training",
+        "timedTraining": "Timed Training",
+        "endurance": "Endurance Training",
+        "teamTraining": "Team Training",
+        "competition": "Competition",
+        "skillFocus": "Skill Focus",
+        "adrenaline": "Adrenaline Training",
+        "nightVision": "Night Vision Training",
+        "distance": "Distance Training",
+        "multiTarget": "Multi-Target Training",
+        "hostageRescue": "Hostage Rescue Training"
+    },
+    
+    "ledControlTitle": "LED Control",
+    "colorPickerLabel": "Color:",
+    "brightnessLabel": "Brightness:",
+    
+    "effects": {
+        "rainbow": "Rainbow",
+        "fade": "Fade",
+        "sparkle": "Sparkle",
+        "wave": "Wave",
+        "fire": "Fire"
+    },
+    
+    "trainingStatusTitle": "Training Status",
+    "hits": "Hits",
+    "misses": "Misses",
+    "score": "Score",
+    "time": "Time",
+    "accuracy": "Accuracy",
+    
+    "connectionStatus": {
+        "connected": "Connected",
+        "disconnected": "Disconnected",
+        "reconnecting": "Reconnecting..."
+    },
+    
+    "messages": {
+        "trainingStarted": "Training started",
+        "trainingStopped": "Training stopped",
+        "trainingCompleted": "Training completed",
+        "connectionLost": "Connection lost",
+        "connectionError": "Connection error",
+        "commandSent": "Command sent",
+        "invalidConfig": "Invalid configuration"
+    }
+}
