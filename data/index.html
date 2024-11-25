@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESP32 LED Matrix Steuerung</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <h1 id="title">ESP32 LED Matrix Steuerung</h1>
+            <div class="language-selector">
+                <label for="languageSelect" id="languageLabel">Sprache:</label>
+                <select id="languageSelect" onchange="changeLanguage(this.value)">
+                    <option value="de">Deutsch</option>
+                    <option value="en">English</option>
+                    <option value="fr">Français</option>
+                </select>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Client Control -->
+            <section class="card" id="clientControl">
+                <h2 id="clientControlTitle">Client-Steuerung</h2>
+                <div id="clientList" class="client-list"></div>
+                <div class="client-actions">
+                    <button id="selectAllBtn" onclick="selectAllClients()">Alle auswählen</button>
+                    <button id="deselectAllBtn" onclick="deselectAllClients()">Auswahl aufheben</button>
+                </div>
+            </section>
+
+            <!-- Training Control -->
+            <section class="card" id="trainingControl">
+                <h2 id="trainingTitle">Training</h2>
+                <div class="training-config">
+                    <div class="form-group">
+                        <label for="trainingMode" id="trainingModeLabel">Trainingsmodus:</label>
+                        <select id="trainingMode">
+                            <!-- Options will be populated by JavaScript -->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="difficulty" id="difficultyLabel">Schwierigkeitsgrad:</label>
+                        <select id="difficulty">
+                            <option value="0">Einfach</option>
+                            <option value="1">Mittel</option>
+                            <option value="2">Schwer</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="duration" id="durationLabel">Dauer (Sekunden):</label>
+                        <input type="number" id="duration" min="10" max="3600" value="300">
+                    </div>
+                    <div class="form-group">
+                        <label for="targetCount" id="targetCountLabel">Anzahl Ziele:</label>
+                        <input type="number" id="targetCount" min="1" max="100" value="10">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="soundEnabled" checked>
+                            <label for="soundEnabled" id="soundEnabledLabel">Ton aktiviert</label>
+                        </div>
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="stressorsEnabled">
+                            <label for="stressorsEnabled" id="stressorsEnabledLabel">Stressfaktoren</label>
+                        </div>
+                    </div>
+                    <div class="training-actions">
+                        <button id="startTrainingBtn" onclick="startTraining()" class="primary">Training starten</button>
+                        <button id="stopTrainingBtn" onclick="stopTraining()" class="danger" disabled>Training beenden</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- LED Control -->
+            <section class="card" id="ledControl">
+                <h2 id="ledControlTitle">LED-Steuerung</h2>
+                <div class="led-config">
+                    <div class="form-group">
+                        <label for="colorPicker" id="colorPickerLabel">Farbe:</label>
+                        <input type="color" id="colorPicker" value="#ffffff">
+                    </div>
+                    <div class="form-group">
+                        <label for="brightness" id="brightnessLabel">Helligkeit:</label>
+                        <input type="range" id="brightness" min="0" max="255" value="128">
+                    </div>
+                    <div class="effect-buttons">
+                        <button onclick="sendEffect('rainbow')" id="rainbowEffectBtn">Regenbogen</button>
+                        <button onclick="sendEffect('fade')" id="fadeEffectBtn">Überblenden</button>
+                        <button onclick="sendEffect('sparkle')" id="sparkleEffectBtn">Funkeln</button>
+                        <button onclick="sendEffect('wave')" id="waveEffectBtn">Welle</button>
+                        <button onclick="sendEffect('fire')" id="fireEffectBtn">Feuer</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Training Status -->
+            <section class="card" id="trainingStatus">
+                <h2 id="trainingStatusTitle">Training Status</h2>
+                <div id="trainingStatusContent" class="training-status-content">
+                    <!-- Will be populated by JavaScript -->
+                </div>
+            </section>
+        </main>
+
+        <!-- Status Bar -->
+        <footer class="status-bar">
+            <div id="connectionStatus" class="connection-status">Verbunden</div>
+            <div id="messageBox" class="message-box"></div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="/js/script.js"></script>
+</body>
+</html>
